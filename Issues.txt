@@ -1,0 +1,2 @@
+1-> About is working only in the home page. 
+2-> Same about us case with Contact us.
