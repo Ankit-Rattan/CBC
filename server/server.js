@@ -1,14 +1,18 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const dotenv = require("dotenv");
 const cors = require('cors');
 
 const app = express();
 const port = 3001;
 
 app.use(cors());
+dotenv.config({ path: "./.env" });
+require("./db/connection")
+
+
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://rattanankit2004:clicknik@cluster0.outnwh8.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const postSchema = new mongoose.Schema({
   content: String,
