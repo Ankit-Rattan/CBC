@@ -47,7 +47,7 @@ const PostForm = () => {
       </label>
       <br />
       <label>
-        Image Link:
+        Link:
         <input type="text" value={link} onChange={(e) => setLink(e.target.value)} />
       </label>
       <br />

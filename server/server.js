@@ -32,7 +32,6 @@ app.post('/posts', async (req, res) => {
     await newPost.save();
 
     res.status(201).json({
-      imglink: newPost.picture,
       title: newPost.content,
       name: newPost.name,
       date: newPost.date.toISOString().split('T')[0],
