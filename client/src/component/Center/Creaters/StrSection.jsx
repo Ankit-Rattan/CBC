@@ -4,13 +4,7 @@ const StrSection = (props) => {
   return (
     <>
       <div className='justify-center items-center border rounded-lg p-4 m-10 max-w-xl shadow-2xl bg-slate-100'>
-        <div className=''>
-          {props.imglink ? (
-            <img src={props.imglink} alt='' className='rounded-lg max-w-lg m-0' />
-          ) : (
-            <p>No image available</p>
-          )}
-        </div>
+
         <div className='justify-center text-center'>
           <div>
             <h1 className='font-semibold font-sans text-2xl'>{props.title}</h1>
@@ -30,7 +24,7 @@ const StrSection = (props) => {
               Read More
             </a>
           ) : (
-            <span>No Link Available</span>
+            <span>..</span>
           )}
         </div>
       </div>

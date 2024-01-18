@@ -6,7 +6,6 @@ const PostList = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    // Fetch all posts when the component mounts
     fetchPosts();
   }, []);
 
@@ -29,8 +28,7 @@ const PostList = () => {
       <h2>All Posts</h2>
       {posts.map((post) => (
         <StrSection
-          key={post._id} // Assuming each post has a unique identifier (_id)
-          imglink={post.picture}
+          key={post._id}
           title={post.content}
           name={post.name}
           date={new Date(post.date).toISOString().split('T')[0]}

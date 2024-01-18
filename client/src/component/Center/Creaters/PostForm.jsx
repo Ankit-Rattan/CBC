@@ -16,7 +16,7 @@ const PostForm = () => {
         body: JSON.stringify({
           content,
           name,
-          link, // Use the provided link directly
+          link,
         }),
       });
 
@@ -24,7 +24,6 @@ const PostForm = () => {
         const data = await response.json();
         console.log('New post created:', data);
         alert("POST SUCCESSFUL");
-        // Add logic to update the UI with the new post data if needed
       } else {
         console.error('Error creating post:', response.statusText);
       }
