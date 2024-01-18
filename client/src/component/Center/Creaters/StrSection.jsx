@@ -19,7 +19,7 @@ const StrSection = (props) => {
           <br />
         </div>
         <div className='text-right text-blue-700'>
-          {props.link ? (
+          {props.link!="-" ? (
             <a href={props.link} target='_blank' rel='noopener noreferrer'>
               Read More
             </a>

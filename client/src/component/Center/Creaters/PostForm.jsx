@@ -48,6 +48,7 @@ const PostForm = () => {
       <label>
         Link:
         <input type="text" value={link} onChange={(e) => setLink(e.target.value)} />
+        <p className='ml-[2vh]'>Type - if no link is there</p>
       </label>
       <br />
       <button onClick={handlePostSubmit}>Post</button>
