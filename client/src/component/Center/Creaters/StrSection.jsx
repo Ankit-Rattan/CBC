@@ -3,7 +3,7 @@ import React from 'react';
 const StrSection = (props) => {
   return (
     <>
-    {/* bg color  */}
+
       <div className='justify-center items-center border rounded-lg p-4 m-10 max-w-xl shadow-2xl  bg-blue-200'>
 
         <div className='justify-center text-center'>
