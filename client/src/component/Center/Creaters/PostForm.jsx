@@ -33,7 +33,7 @@ const PostForm = () => {
   };
 
   return (
-    <div>
+    <div className=''>
       <h2>Create a New Post</h2>
       <label>
         Content:
@@ -48,7 +48,7 @@ const PostForm = () => {
       <label>
         Link:
         <input type="text" value={link} onChange={(e) => setLink(e.target.value)} />
-        <p className='ml-[2vh]'>Type - if no link is there</p>
+        <p className='ml-[2vh]'>Type 'NA' if no link is there</p>
       </label>
       <br />
       <button onClick={handlePostSubmit}>Post</button>

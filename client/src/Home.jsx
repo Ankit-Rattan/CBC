@@ -27,6 +27,7 @@ function App() {
       <About/>
       <Enter/>
       <Form/>
+      <Contact/>
       </div>
   
 

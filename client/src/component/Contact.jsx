@@ -1,9 +1,13 @@
 import React from 'react'
+import Logo from './Logo'
 
 const Contact = () => {
   return (
+    <>
+
     <div className='h-[100vh] bg-black' id='contact'> 
-      <div>
+      <div className='flex  justify-between text-center items-center'>
+      <Logo/>
         <h1 className='text-center text-[3rem] font-mono font-semibold m-[2rem] text-white'>Connect with us  </h1>
       </div>
       <div className=' flex flex-wrap text-center text-[2rem] justify-evenly mt-[20vh]'>
@@ -13,6 +17,7 @@ const Contact = () => {
         <div className='bg-black text-amber-200 shadow-2xl border border-amber-200 shadow-amber-200 p-[1rem] rounded-full cursor-pointer font-mono buttonmove'>✖️/Twitter </div>
       </div>
     </div>
+    </>
   )
 }
 
