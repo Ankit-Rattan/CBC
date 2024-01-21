@@ -195,7 +195,7 @@ body{
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  height:130vh ;
+  height:100vh ;
 
 }
 
@@ -234,10 +234,10 @@ body{
 
 }
 .who-we h3{
-  font-size: 3rem;
+  font-size: 4rem;
   font-family:monospace;
-  font-weight: 900;
-  /* text-shadow: 10px 12px 13px #828080; */
+  font-weight: bold;
+  /* text-shadow: 10px 4px 13px #828080; */
   text-transform: uppercase;
 }
 .who-we p{
@@ -274,6 +274,19 @@ body{
 
 
 /* CBC Center */
+
+.center-container {
+  position: relative;
+}
+
+.button-container {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
 
 
 /*  forms */
@@ -342,9 +355,6 @@ body{
 }
 
 .post_creator{
-  /* background-image: url(../src/component/images/post_bg.jpg);
-  background-attachment: fixed;
-  background-size: cover; */
   
   /* background-color: #243B55; */
   background-color: #f4f3f3;

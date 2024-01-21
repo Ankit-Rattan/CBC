@@ -33,63 +33,45 @@ const PostForm = () => {
   };
 
   return (
-    // <div>
-    //   <h2>Create a New Post</h2>
-    //   <label>
-    //     Content:
-    //     <input type="text" value={content} onChange={(e) => setContent(e.target.value)} />
-    //   </label>
-    //   <br />
-    //   <label>
-    //     Name:
-    //     <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-    //   </label>
-    //   <br />
-    //   <label>
-    //     Link:
-    //     <input type="text" value={link} onChange={(e) => setLink(e.target.value)} />
-    //     <p className='ml-[2vh]'>Type - if no link is there</p>
-    //   </label>
-    //   <br />
-    //   <button onClick={handlePostSubmit}>Post</button>
-    // </div>
+    <>
+      <div className="form-container sign-in-container">
+        <h1>Create a New Post</h1>
 
-    <div className="form-container sign-in-container">
-      <h1>Create a New Post</h1>
-
-      <div className="infield">
-        <label>
-          Content:
-          <input
-            type="text"
-            value={content}
-            onChange={(e) => setContent(e.target.value)}
-          />
-        </label>
+        <div className="infield">
+          <label>
+            Content:
+            <input
+              type="text"
+              value={content}
+              onChange={(e) => setContent(e.target.value)}
+            />
+          </label>
+        </div>
+        <div className="infield">
+          <label>
+            Name:
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+        </div>
+        <div className="infield">
+          <label>
+            Link:
+            <input
+              type="text"
+              value={link}
+              onChange={(e) => setLink(e.target.value)}
+            />
+            <p className="ml-[2vh]">Type - if no link is there</p>
+          </label>
+        </div>
+        <br />
+        <button onClick={handlePostSubmit}>Post</button>
       </div>
-      <div className="infield">
-        <label>
-          Name:
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </label>
-      </div>
-      <div className="infield">
-        <label>
-          Link:
-          <input
-            type="text"
-            value={link}
-            onChange={(e) => setLink(e.target.value)}
-          />
-          <p className="ml-[2vh]">Type - if no link is there</p>
-        </label>
-      </div>
-      <button onClick={handlePostSubmit}>Post</button>
-    </div>
+    </>
   );
 };
 

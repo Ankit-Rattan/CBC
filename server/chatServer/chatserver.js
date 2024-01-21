@@ -53,6 +53,11 @@ io.on("connection", async (socket) => {
 
     // Send existing messages to the connected client
     socket.emit("chat history", messages);
+    const messages = await ChatMessage.find({
+      timestamp: { $gte: new Date(Date.now() - 24 * 60 * 60 * 1000) },
+    }).sort({ timestamp: "asc" });
+
+    socket.emit("chat history", messages);
   } catch (error) {
     console.error("Error retrieving messages:", error);
   }

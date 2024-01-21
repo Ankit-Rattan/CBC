@@ -3,7 +3,7 @@ import React from "react";
 const StrSection = (props) => {
   return (
     <>
-      <div className="justify-center items-center border rounded-lg p-4 m-10 max-w-xl shadow-2xl bg-white">
+      <div className="justify-center items-center border rounded-lg p-4 m-10 max-w-xl shadow-2xl  bg-white">
         <div className="justify-center text-center">
           <div>
             <h1 className="font-semibold font-sans text-2xl">{props.title}</h1>

@@ -10,7 +10,7 @@ function About() {
         <div className="feature">
           <div className="fleft">
             <div className="ele who-we ">
-              <h3 className="text-purple-300">Who We ARE</h3>
+              <h3>Who We ARE🤔</h3>
               <br />
               <div className="para">
                 <p>

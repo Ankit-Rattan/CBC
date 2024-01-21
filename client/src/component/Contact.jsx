@@ -1,12 +1,19 @@
 import React from "react";
+import Logo from "./Logo";
 
 const Contact = () => {
   return (
-    <div className="h-[100vh] " id="contact">
+    <div className="h-[100vh] bg-black" id="contact">
       <div>
-        <h1 className="text-center text-[3rem] font-mono font-semibold m-[2rem] text-slate-950">
-          Connect with us{" "}
-        </h1>
+        <div className="flex justify-between text-center items-center">
+          <Logo />
+          <div>
+            <h1 className="text-center text-[3rem] items-center font-mono font-semibold m-[2rem] text-white">
+              Connect with us{" "}
+            </h1>
+          </div>
+          <div></div>
+        </div>
       </div>
       <div className=" flex flex-wrap text-center text-[2rem] justify-evenly mt-[20vh]">
         <div className=" text-red-400 shadow-2xl border border-red-400 shadow-red-400 p-[1rem] rounded-full cursor-pointer font-mono imganim ">

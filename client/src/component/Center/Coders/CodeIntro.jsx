@@ -1,10 +1,12 @@
 import React from "react";
 import Footer from "../../Footer";
 import { NavLink } from "react-router-dom";
+import Logo from "../../Logo";
 
 const CodeIntro = () => {
   return (
     <>
+      <Logo />
       <div className="p-5 items-center m-auto shadow-zinc-50">
         <div className="justify-center">
           <ul className=" text-lg text-center justify-around">
