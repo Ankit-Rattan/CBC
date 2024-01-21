@@ -1,41 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import io from 'socket.io-client';
+import React, { useState, useEffect } from "react";
+import io from "socket.io-client";
 
-const socket = io('http://localhost:5000', {
+const socket = io("http://localhost:5000", {
   withCredentials: true,
   extraHeaders: {
-    'Access-Control-Allow-Origin': 'http://localhost:3000',
+    "Access-Control-Allow-Origin": "http://localhost:3000",
   },
 });
 const ChatCode = () => {
   const [messages, setMessages] = useState([]);
-  const [user, setUser] = useState('');
-  const [messageInput, setMessageInput] = useState('');
+  const [user, setUser] = useState("");
+  const [messageInput, setMessageInput] = useState("");
 
   useEffect(() => {
     // Attach event listener only once when component mounts
-    socket.on('chat message', (message) => {
+    socket.on("chat message", (message) => {
       setMessages((prevMessages) => [...prevMessages, message]);
     });
 
-    socket.on('chat history', (history) => {
+    socket.on("chat history", (history) => {
       setMessages(history);
     });
 
     // Cleanup the socket listener when the component unmounts
     return () => {
-      socket.off('chat message');
-      socket.off('chat history');
+      socket.off("chat message");
+      socket.off("chat history");
     };
   }, []); // Empty dependency array means this effect runs once on mount
 
   const sendMessage = () => {
-    socket.emit('chat message', { user, message: messageInput });
+    socket.emit("chat message", { user, message: messageInput });
 
-    setMessages((prevMessages) => [...prevMessages, { user, message: messageInput }]);
-    setMessageInput('');
+    setMessages((prevMessages) => [
+      ...prevMessages,
+      { user, message: messageInput },
+    ]);
+    setMessageInput("");
   };
-
 
   return (
     <div>
@@ -61,7 +63,6 @@ const ChatCode = () => {
       <button onClick={sendMessage}>Send</button>
     </div>
   );
-  
-}
+};
 
-export default ChatCode
+export default ChatCode;
