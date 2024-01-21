@@ -2,13 +2,11 @@ import React from "react";
 import about from "./images/about.png";
 import about2 from "./images/mainTwo.png";
 import Navbar from "./Navbar";
-import Logo from "./Logo";
 
-function About() {
+function Aboutf() {
   return (
     <>
       <div className="About" id="about">
-      <Logo/>
         <div className="feature">
           <div className="fleft">
             <div className="ele who-we ">
@@ -55,4 +53,4 @@ function About() {
   );
 }
 
-export default About;
+export default Aboutf;

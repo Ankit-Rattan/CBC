@@ -1,12 +1,11 @@
 import React from "react";
 import Logo from "./Logo";
 
-const Contact = () => {
+const Contactf = () => {
   return (
     <div className="h-[110vh] bg-black" id="contact">
       <div>
-        <div className="flex justify-between text-center items-center">
-          <Logo />
+        <div className=" justify-between text-center items-center">
           <div>
             <h1 className="text-center text-[3rem] items-center font-mono font-semibold m-[1rem] text-white">
               Connect with us
@@ -56,4 +55,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contactf;

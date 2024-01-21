@@ -21,7 +21,7 @@ function Navbar(props) {
               <NavLink to="/center">CBC Center</NavLink>
             </li>
             <li className="border border-none duration-500 hover:bg-slate-700 hover:text-white rounded-full py-1 px-2 cursor-pointer">
-              <a href="#about">About Us</a>{" "}
+              <NavLink to="/contact">About Us</NavLink>{" "}
             </li>
             <li className="border border-none duration-500 hover:bg-slate-700 hover:text-white rounded-full py-1 px-2 cursor-pointer">
               <NavLink to="/contact"> Contact Us</NavLink>

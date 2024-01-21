@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import img from "./images/feedback.jpg";
+import img from "./images/about.png";
 
 function Enter() {
   return (
     <div className="flex justify-between  bg-white">
       <div className="items-center m-auto">
-        <img src={img} className=" h-[50vh]" />
+        <img src={img} className=" h-[60vh] imganim" />
       </div>
 
       <div className="flex flex-col flex-wrap justify-around h-[70vh] mt-10 mb-10 p-16">
