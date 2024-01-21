@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "./Logo";
 
 const Contact = () => {
+
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShow(true);
+    }, 700);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   return (
+    <div className={`button-container ${show ? 'fade-in' : ''} `}>
+
+
     <div className="h-[110vh] bg-black" id="contact">
       <div>
         <div className="flex justify-between text-center items-center">
@@ -52,6 +66,7 @@ const Contact = () => {
         </form>
 
       </div>
+    </div>
     </div>
   );
 };
