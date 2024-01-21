@@ -391,3 +391,23 @@ body{
   margin-bottom: 50px;
 }
 
+
+/* Chat */
+.chat {
+  display: flex;
+  flex-direction: column;
+  
+}
+.chat::-webkit-scrollbar {
+  width:0; 
+}
+.my-mess {
+  text-align: right;
+  padding: 5px;
+  margin: 5px;
+}
+.other-mess {
+  text-align: left;
+  padding: 5px;
+  margin: 5px;
+} 

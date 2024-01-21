@@ -65,7 +65,7 @@ const PostForm = () => {
               value={link}
               onChange={(e) => setLink(e.target.value)}
             />
-            <p className="ml-[2vh]">Type - if no link is there</p>
+            <p className="ml-[2vh]">Type '-' if no link is there</p>
           </label>
         </div>
         <br />

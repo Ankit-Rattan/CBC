@@ -46,13 +46,6 @@ io.on("connection", async (socket) => {
   console.log("A user connected");
 
   try {
-    // Retrieve messages from the last 24 hours
-    const messages = await ChatMessage.find({
-      timestamp: { $gte: new Date(Date.now() - 24 * 60 * 60 * 1000) },
-    }).sort({ timestamp: "asc" });
-
-    // Send existing messages to the connected client
-    socket.emit("chat history", messages);
     const messages = await ChatMessage.find({
       timestamp: { $gte: new Date(Date.now() - 24 * 60 * 60 * 1000) },
     }).sort({ timestamp: "asc" });
@@ -69,6 +62,12 @@ io.on("connection", async (socket) => {
     await newMessage.save();
 
     io.emit("chat message", newMessage);
+
+    const updatedMessages = await ChatMessage.find({
+      timestamp: { $gte: new Date(Date.now() - 24 * 60 * 60 * 1000) },
+    }).sort({ timestamp: "asc" });
+
+    io.emit("chat history", updatedMessages);
   });
 
   socket.on("disconnect", () => {
@@ -76,6 +75,10 @@ io.on("connection", async (socket) => {
   });
 });
 
+
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+
+

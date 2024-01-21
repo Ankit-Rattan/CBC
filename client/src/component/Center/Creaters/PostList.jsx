@@ -24,12 +24,12 @@ const PostList = () => {
   };
 
   return (
-    <div className="post_list_outer">
+    <div className="post_list_outer ">
       <div className="post_list">
         <div className="h2">
           <h2>All Posts</h2>
         </div>
-        <div className="post_list_inner">
+        <div className="post_list_inner flex flex-wrap mx-[2rem] ">
           {posts.map((post) => (
             <StrSection
               key={post._id}
