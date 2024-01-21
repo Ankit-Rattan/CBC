@@ -39,6 +39,16 @@ const PostForm = () => {
 
         <div className="infield">
           <label>
+            Title:
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+        </div>
+        <div className="infield">
+          <label>
             Name:
             <input
               type="text"
@@ -61,32 +71,16 @@ const PostForm = () => {
         <div className="infield">
           <label className="text-center items-center">
             Content:
-            <textarea
+            <input
               type="text"
-              cols="130"
-              color="black"
               value={content}
-              style={{ color: "black" }} 
               onChange={(e) => setContent(e.target.value)}
             />
           </label>
         </div>
         <br />
         <button onClick={handlePostSubmit}>Post</button>
-        {/* <div>
-          <ul className="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div> */}
+
       </div>
     </>
   );
