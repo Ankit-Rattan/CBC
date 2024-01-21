@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import about from "./images/about.png";
 import about2 from "./images/mainTwo.png";
 import Navbar from "./Navbar";
 import Logo from "./Logo";
 
 function About() {
+
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShow(true);
+    }, 700);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
   return (
-    <>
+    
+        <div className={`button-container ${show ? 'fade-in' : ''} `}>
+
+
       <div className="About" id="about">
       <Logo/>
         <div className="feature">
@@ -51,7 +64,8 @@ function About() {
           </div>
         </div>
       </div>
-    </>
+        </div>
+  
   );
 }
 
