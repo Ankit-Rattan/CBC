@@ -17,7 +17,7 @@ const StrSection = (props) => {
             </p>
           </div>
           <div>
-            <p className="">{props.primarytext}</p>
+            <p className="m-w[50rem]">{props.primarytext}</p>
           </div>
           <br />
         </div>
