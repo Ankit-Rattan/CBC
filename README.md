@@ -1,8 +1,26 @@
-# React + Vite
+# CBC
+CBC: Create By Creators is a platform that provides you with a combination of two cutting-edge scopes together
+## WHO WE ARE
+We are one among you and still building ourselves to build this. We are just obsessed with creations
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## WHY TO CHOOSE US
+CBC is the platform that provides peak creative edges at one platform. 
+You can discuss your doubts and issues with the same other in Coder.
+To pull out your creativity we have our Creators section .
 
-Currently, two official plugins are available:
+## HOW WE HELP YOU
+If you are just fed up searching here and there pilling issues in mind.
+Then you are at the right place. 
+Also if you feel to express your mind like our developer, then you can just post it.
+We will explore your reach! 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Feature Provided 
+1: Creators: Opens a new world for you to explore other's creativity and to share your thoughts too!
+<br>
+2: Coders: In this panel, we have two options helping each other via blogs by tech experts and an open discussion panel for any doubt and discussion.
+
+## Tech Stack 
+ReactJS, Tailwind+CSS, ExpressJS, MongoAtlas, SocketIO.
+
+## Contributor
+Ankit Rattan <br> Himanshu Gupta
