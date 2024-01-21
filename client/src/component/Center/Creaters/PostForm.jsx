@@ -39,16 +39,6 @@ const PostForm = () => {
 
         <div className="infield">
           <label>
-            Content:
-            <input
-              type="text"
-              value={content}
-              onChange={(e) => setContent(e.target.value)}
-            />
-          </label>
-        </div>
-        <div className="infield">
-          <label>
             Name:
             <input
               type="text"
@@ -66,6 +56,19 @@ const PostForm = () => {
               onChange={(e) => setLink(e.target.value)}
             />
             <p className="ml-[2vh]">Type '-' if no link is there</p>
+          </label>
+        </div>
+        <div className="infield">
+          <label className="text-center items-center">
+            Content:
+            <textarea
+              type="text"
+              cols="130"
+              color="black"
+              value={content}
+              style={{ color: "black" }} 
+              onChange={(e) => setContent(e.target.value)}
+            />
           </label>
         </div>
         <br />

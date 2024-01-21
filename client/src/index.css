@@ -298,14 +298,14 @@ body{
   /* left : 20vw; */
   position : relative;
   width : 100vw;
-  height : 100vh;
+  height : 80vh;
   display : flex;
   flex-direction : column;
   align-items : center;
   justify-content : center;
   padding : 0px 50px;
   background-color: #141E30;
-  border-radius: 0 0px 200px 200px;
+  border-radius: 0 0px 100px 100px;
 }
 .sign-in-container{
   z-index : 0;
@@ -321,7 +321,7 @@ body{
 .form-container .infield{
     position : relative;
     margin : 8px 0px;
-    width : 45vw;
+    width : 70vw;
 }
 .infield input{
   width : 100%;
@@ -379,7 +379,9 @@ body{
   align-items: center;  
 }
 .post_list_inner{
-  width: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+ 
   justify-content: center;
   align-items: center;  
   
