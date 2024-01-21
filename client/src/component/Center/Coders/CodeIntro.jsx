@@ -11,19 +11,13 @@ const CodeIntro = () => {
         <div className="about_bytes">
           <h1>Bytes</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
-            dolorem hic voluptas quis impedit velit, veniam atque, dolorum
-            fugiat doloribus doloremque. Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Reiciendis dolorem hic voluptas quis impedit
-            velit, veniam atque, dolorum fugiat doloribus doloremque. Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
-            dolorem hic voluptas quis impedit velit, veniam atque, dolorum
-            fugiat doloribus doloremque.
+            
+Byte is the optimal choice for accelerating your tech growth and problem-solving. This platform offers a rich blog that serves as a invaluable resource, providing insights, tutorials, and solutions. Whether you're a developer seeking expertise or a tech enthusiast, Byte's blog fosters continuous learning and empowers you in navigating the ever-evolving tech landscape.
           </p>
 
           <div>
             <button>
-              <NavLink to="/blog">Click Here</NavLink>
+              <NavLink to="/blog">Bytes</NavLink>
             </button>
           </div>
         </div>
@@ -34,19 +28,13 @@ const CodeIntro = () => {
         <div className="about_bytes about_open_chat">
           <h1>Open Chat</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
-            dolorem hic voluptas quis impedit velit, veniam atque, dolorum
-            fugiat doloribus doloremque. Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Reiciendis dolorem hic voluptas quis impedit
-            velit, veniam atque, dolorum fugiat doloribus doloremque. Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
-            dolorem hic voluptas quis impedit velit, veniam atque, dolorum
-            fugiat doloribus doloremque.
+
+          Open Chat is the ultimate destination for fostering collaborative discussions and resolving doubts in the tech realm. With its dynamic discussion panels, the platform becomes a vibrant hub where enthusiasts, professionals, and learners converge. Engage in open conversations, seek solutions, and propel your knowledge forward with Open Char's interactive and supportive community.
           </p>
 
           <div>
             <button>
-              <NavLink to="/chatcode">Click Here</NavLink>
+              <NavLink to="/chatcode">Discuss Here</NavLink>
             </button>
           </div>
         </div>
